@@ -1,0 +1,16 @@
+CONFIG_VERSION=2.2.3
+CONFIG_INST_PREFIX=/home/vagrant/rpmbuild/BUILDROOT/gdal-2.2.3-14.el7.x86_64/usr/local
+CONFIG_INST_LIBS=-L/home/vagrant/rpmbuild/BUILDROOT/gdal-2.2.3-14.el7.x86_64/usr/local/lib -lgdal
+CONFIG_INST_CFLAGS=-I/home/vagrant/rpmbuild/BUILDROOT/gdal-2.2.3-14.el7.x86_64/usr/local/include
+CONFIG_INST_DATA=/home/vagrant/rpmbuild/BUILDROOT/gdal-2.2.3-14.el7.x86_64/usr/local/share/gdal/data
+prefix=${CONFIG_INST_PREFIX}
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${exec_prefix}/include
+datadir=${CONFIG_INST_DATA}
+
+Name: libgdal
+Description: Geospatial Data Abstraction Library
+Version: ${CONFIG_VERSION}
+Libs: ${CONFIG_INST_LIBS}
+Cflags: ${CONFIG_INST_CFLAGS}
