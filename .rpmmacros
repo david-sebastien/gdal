@@ -1,0 +1,2 @@
+%__arch_install_post   /usr/lib/rpm/check-rpaths   /usr/lib/rpm/check-buildroot
+%_unpackaged_files_terminate_build 0
