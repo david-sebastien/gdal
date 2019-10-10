@@ -46,5 +46,5 @@ export QA_RPATHS=$[ 0x0002 ]
 %dir /usr/local/bin
 %{_bindir}/*
 %{_prefix}/share/*
-%{_libdir}/*
+%{_prefix}/lib/*
 %{_prefix}/include/*
